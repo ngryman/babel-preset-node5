@@ -1,7 +1,7 @@
 {
   "name": "babel-preset-node5",
-  "version": "11.2.0",
-  "description": "Babel preset for Node 5.x (ES6 / ES2015)",
+  "version": "11.2.1",
+  "description": "Babel preset for Node 5.x (ECMAScript stage 0 and up)",
   "repository": "git://github.com/leebenson/babel-preset-node5.git",
   "main": "index.js",
   "scripts": {

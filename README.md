@@ -1,7 +1,8 @@
 # Babel 6.x presets for Node 5.x (updated regularly!)
 
-Node 5.x brings ~59% [native ES6/ES2015 coverage](https://nodejs.org/en/docs/es6/). This preset for Babel 6 attempts
-to bridge the gap for the much of the remaining 41% using [Babel plug-ins](https://github.com/babel/babel/tree/master/packages).
+Node 5.x brings ~59% [native ES6/ES2015 coverage](https://nodejs.org/en/docs/es6/).
+
+This preset for Babel 6 attempts to bridge the gap for the much of the remaining 41% of the evolving ECMAScript spec using [Babel plug-ins](https://github.com/babel/babel/tree/master/packages), from stage 0 and up.
 
 ## Motivation
 
@@ -124,10 +125,8 @@ We can also wrap promises in `try/catch` blocks, instead of bolting on `.catch()
 
 The necessary babel plug-ins to use async/await are included in this package, so you can use this syntax right away.
 
-## No longer tracking Babel 6 versions
+## Using Node 6.x?
 
-This package originally tracked Babel 6.x versioning.  The problem is, many of the plug-ins and transforms provided by Babel don't always track the the `babel-core` version, so updating one dependency can throw the versioning schema off.
+This preset is fully compatible with the Node 6.x branch. I do _not_ recommend upgrading to the [babel-preset-node6](https://www.npmjs.com/package/babel-preset-node6) package if you're using stage 1-3 features (such as Airbnb-style trailing commas or `async/await`), as the author is only including stage 4 and code may break.
 
-This package will instead now follow its own semver, starting (arbitrarily) at v10.0.0.
-
-I'm using this repo in production, so you can be assured that I'm making it a priority to update Babel 6 deps regularly and track the latest plug-in versions.
+I will be releasing a separate 6.x branch independently that continues stage 0+ compatibility.
