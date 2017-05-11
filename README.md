@@ -1,5 +1,7 @@
 # Babel 6.x presets for Node 5.x (updated regularly!)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ngryman/babel-preset-node5.svg)](https://greenkeeper.io/)
+
 Node 5.x brings ~59% [native ES6/ES2015 coverage](https://nodejs.org/en/docs/es6/).
 
 This preset for Babel 6 attempts to bridge the gap for the much of the remaining 41% of the evolving ECMAScript spec using [Babel plug-ins](https://github.com/babel/babel/tree/master/packages), from stage 0 and up.
